@@ -8,7 +8,7 @@ let students = [
 function GoodStudents(students) {
     return students.filter(student => student.score >= 8.0);
 }
-function WeakStudent(students) {
+function WeakStudents(students) {
     const hasWeak = students.some(student => student.score < 4.0);
     return hasWeak ? "Có sinh viên yếu" : "Không có sinh viên yếu";
 }
@@ -20,7 +20,8 @@ function StudentLabels(students) {
 console.log("Danh sách sinh viên xuất sắc:");
 console.log(GoodStudents(students));
 
-console.log(WeakStudent(students));
+console.log(WeakStudents(students));
 
 console.log("Danh sách hiển thị:");
 console.log(StudentLabels(students));
+
